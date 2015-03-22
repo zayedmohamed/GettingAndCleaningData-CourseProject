@@ -1,26 +1,6 @@
 library(plyr)
 
 ###############################################################################
-# getting data
-###############################################################################
-
-# create data subdirectory if it doesn't exists
-mainDir <- getwd()
-subDir <- "data"
-dir.create(file.path(mainDir, subDir), showWarnings = FALSE)
-
-# download file from the indicated url
-url <- "http://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
-zipfile <- "./data/getdata-projectfiles-UCI-HAR-Dataset.zip"
-download.file(url,zipfile)
-
-# unzip downloaded file to the created data folder
-unzip(zipfile, exdir="./data")
-
-# set working directory to "./data/UCI HAR Dataset/"
-setwd("./data/UCI HAR Dataset/")
-
-###############################################################################
 # 1st step : Merges the training and the test sets to create one data set
 ###############################################################################
 
