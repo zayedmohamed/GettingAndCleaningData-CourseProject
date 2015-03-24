@@ -1,4 +1,4 @@
-# Introduction
+# Summary
 `run_analysis.R` script performs getting data step and the 5 steps described in the course project's definition.
 
 1. Getting data step consists to download file from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip and unzip file to the created data folder.
